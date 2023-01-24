@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
+
+:root {
+
+    --maximum-blue: #6FB1BD;
+    --gunmetal: #123344;
+    --snow: #F9F4F5;
+    --caput: #522A27;
+    --old-lavender: #827081;
+    --rhodium: 'Rhodium Libre', serif;
+}
+
+body{
+    font-family: var(--rhodium);
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    height: calc(100vh - 66px);
+    background: linear-gradient(to right, black,45%, rgba(0,0,0,0.2)), url("../assets/big_image/background_landing.jpg");;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.rigth-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.phrase {
+    color: var(--snow);
+    text-align: center;
+    width: 500px;
+    font-size: 24px;
+    margin-bottom: 12px;
+}

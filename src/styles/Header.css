@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
+
+:root {
+
+    --maximum-blue: #6FB1BD;
+    --gunmetal: #123344;
+    --snow: #F9F4F5;
+    --caput: #522A27;
+    --old-lavender: #827081;
+    --rhodium: 'Rhodium Libre', serif;
+}
+
+body{
+    font-family: var(--rhodium);
+}
+
+.navbar {
+    background-color: var(--snow);
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--gunmetal);
+}
+
+.navbar img {
+    height: 60px;
+    margin: 0 72px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    margin: 0 72px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: var(--gunmetal);
+}

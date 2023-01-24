@@ -1,0 +1,39 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(80vh);
+    flex-direction: column;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form form label {
+    font-size: small;
+    font-weight: bold;
+    margin: 12px;
+}
+
+.form form input{
+    background-color: var(--snow);
+    border: none;
+    border-radius: 12px;
+    width: 80%;
+    padding: 0 12px;
+    height: 48px;
+}
+
+.form form input::placeholder{
+    color:gray;
+    opacity: 0.5;
+}
+
+.form form .submit {
+    margin: 12px;
+    background-color: var(--maximum-blue);
+    color: snow;
+    font-size: medium;
+}
