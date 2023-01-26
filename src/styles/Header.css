@@ -22,7 +22,7 @@ body{
     border-bottom: 2px solid var(--gunmetal);
 }
 
-.navbar img {
+.navbar .main-logo {
     height: 60px;
     margin: 0 72px;
 }
@@ -35,6 +35,36 @@ body{
 }
 .navbar ul li a{
     text-decoration: none;
-    padding: 20px;
+    padding: 18px;
     color: var(--gunmetal);
+}
+
+.navbar ul li a{
+    transition: ease 500ms;
+}
+
+.navbar ul li a:hover {
+    color: var(--snow);
+    background-color: var(--maximum-blue);
+}
+
+.ham-menu {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar .main-logo {
+        height: 60px;
+        margin: 0 18px;
+    }
+
+    .ham-menu {
+        display: block;
+        transform: scale(0.6);
+    }
 }

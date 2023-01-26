@@ -27,4 +27,26 @@ body{
 
 .socialMedia img {
     padding: 12px;
+    border-radius: 50%;
+    transition: ease 600ms;
+}
+
+.socialMedia img:hover {
+    background-color: var(--old-lavender) ;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+
+    .socialMedia {
+        background-color: var(--snow);
+        width: 70%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 32px;
+    
+    }
+
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/Header.css";
-import logo_positive from "../assets/bilongo_logo_positive.png";
+import socialBookLogo from "../assets/socialBook_logo.png"
+import hamMenu from "../assets/icons/ham_menu.png"
 
 const Header = () => {
   return (
     <header>
       <nav className="navbar">
-        <img src={logo_positive} alt="bilongo logo" />
+        <img src={socialBookLogo} alt="socialbooks logo" className="main-logo"/>
         <ul>
           <li>
             <a href="/">Inicio</a>
@@ -15,6 +16,7 @@ const Header = () => {
             <a href="/login">Login</a>
           </li>
         </ul>
+        <img src={hamMenu} alt="Menu" className="ham-menu"/>
       </nav>
     </header>
   );
